@@ -8,7 +8,7 @@ import {Typography} from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 
-const DAYS_OPTIONS = [7, 14, 30];
+export const DAYS_OPTIONS = [7, 30, 180];
 
 export function WebsiteTotalVisits({domain}) {
   const [daysOption, setDaysOption] = useState(0);

@@ -8,6 +8,7 @@ import {ToggleButton} from "@mui/material";
 import Card from "@mui/material/Card";
 import {LoadingCardWithSpinning} from "./LoadingDisplays";
 import Grid from "@mui/material/Grid";
+import {DAYS_OPTIONS} from "./WebsiteTotalVisits";
 
 export function LandingWebsiteVisitsView() {
   function dataDisplayFunction(items) {
@@ -34,8 +35,7 @@ export function LandingWebsiteVisitsView() {
 }
 
 export function DashboardWebsiteVisitsView({domain}) {
-  const daysOptions = [7, 14, 30];
-  const [daysToBeDisplay, setDaysToBeDisplay] = useState(daysOptions[0]);
+  const [daysToBeDisplay, setDaysToBeDisplay] = useState(DAYS_OPTIONS[0]);
   const [URL, setURL] = useState(domainVisitsDataByDays(domain, daysToBeDisplay));
 
   const handleDaysToBeDisplayChange = (event, newDays) => {
