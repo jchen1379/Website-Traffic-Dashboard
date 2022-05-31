@@ -56,7 +56,7 @@ export function DashboardWebsiteVisitsView({domain}) {
           onChange={handleDaysToBeDisplayChange}
           sx={{ml: 2}}>
           {
-            daysOptions.map(day => (
+            DAYS_OPTIONS.map(day => (
               <ToggleButton value={day}>{day} Days</ToggleButton>
             ))
           }
