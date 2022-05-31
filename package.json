@@ -1,10 +1,6 @@
 {
   "name": "website-traffic-frontend",
   "version": "0.1.0",
-  "engines": {
-    "node": "14.x",
-    "npm": "7.15.1"
-  },
   "private": true,
   "dependencies": {
     "@mui/material": "^5.4.1",
